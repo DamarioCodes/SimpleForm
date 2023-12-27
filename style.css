@@ -1,0 +1,6 @@
+/* Style for all panel headers with background color #00bfff (with !important) */
+.panel-default .panel-heading {
+    background-color: #009933 !important;
+    color: #ffffff !important; /* Text color for the panel header */
+}
+

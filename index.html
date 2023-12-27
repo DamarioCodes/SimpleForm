@@ -1,0 +1,186 @@
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Project 1</title>
+  <!-- In HTML head -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  
+<link rel="stylesheet" href="styles.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--fontAwesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--toaster-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css">
+</head>
+
+<body>
+
+  <div class="container">
+      <div class = "well">
+    Fill out the form and click the submit button when complete...
+  </div>
+    <div class="row">
+      <div class="col-md-6">
+      <section>
+
+  <!-- User Panel -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">User:</h3>
+    </div>
+    <div class="panel-body">
+      
+      <!-- User form fields here -->
+     <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" class="form-control" id="username" placeholder ="Type username...">
+    </div>
+
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input type="text" class="form-control" id="firstName" placeholder="Type first name...">
+    </div>
+
+    <div class="form-group">  
+      <label for="lastName">Last Name</label>
+      <input type="text" class="form-control" id="lastName" placeholder="Type last name...">
+    </div>
+      
+    </div>
+  </div>
+
+  <!-- Contact Panel -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+       <h3 class="panel-title">Contact: </h3>
+    </div>
+    <div class="panel-body">
+       <!-- Contact form fields here -->
+      <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+      <input type="tel" class="form-control" placeholder="Type phone#..." id="telephone">
+    </div>
+
+    <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-fax"></i></span>
+      <input type="text" class="form-control" placeholder="Type fax#..." id="fax">
+    </div>
+
+    <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+      <input type="email" class="form-control" placeholder="Type e-mail..." id="email">
+    </div>
+    </div>
+  </div>
+   
+  <!-- Schedule Panel -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Schedule:</h3>
+    </div>
+    <div class="panel-body">
+      <!-- Schedule form fields here -->
+      <div class="col-md-12">
+      <b>Adults:</b>
+      <select id = "adults" class="form-control">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+    </select>
+      </div>
+    
+    <div class="col-md-6">
+    <div class="form-group">
+      <label>Check-in Date:</label>
+      <input type="date" id ="check-in"class="form-control"> 
+    </div>
+      </div>
+      <div class="col-md-6">
+    <div class="form-group">  
+      <label>Check-out Date:</label>
+      <input type="date" id = "check-out" class="form-control">
+    </div>
+      </div>
+    
+      <div class="col-md-6">
+    <div class="form-group">
+      <label>Days:</label>
+      <input type="text" id="days" class="form-control" readonly>
+    </div>
+      </div>
+      
+    <div class="col-md-6">
+    <div class="form-group">
+      <label> Cost($):</label>
+      <input type="text" id="cost" class="form-control" readonly> 
+    </div>
+    </div>
+    </div>
+  </div>
+        </div>
+        <div class="col-md-6">
+ <!-- other Panel -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Other:</h3>
+    </div>
+    <div class="panel-body">
+      <!-- Other form fields here -->
+      <b>Message:</b>
+      <textarea class="form-control" rows="29"></textarea>
+      <b>Range:</b>
+    <input type="range" class="form-control" min="1" max="10" step="1">
+      <b> Priority</b>
+    <div class="radio">
+      <div class="col-md-4">
+      <label>
+        <input type="radio" name="priority" value="low"> 
+        Low
+      </label>
+        </div>
+    </div>
+
+    <div class="radio">
+      <div class="col-md-4">
+      <label>
+        <input type="radio" name="priority" value="medium">
+        Medium  
+      </label>
+      </div>
+    </div>
+
+    <div class="radio">
+      <div class="col-md-4">
+      <label>
+        <input type="radio" name="priority" value="high">
+        High
+      </label>
+      </div>
+    </div>
+    </div>
+    </div>
+             <div>
+    <button type="reset" class="btn btn-default" id="resetBtn">Reset</button>
+    <button type="submit" class="btn btn-primary" id ="submitBtn">Submit</button>
+  </div>        
+        </div>
+</section>
+    </div>
+    
+  </div>
+  
+
+  <!-- Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
+
+</body>
+
+</html>
